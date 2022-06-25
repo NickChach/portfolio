@@ -1,0 +1,201 @@
+/*-----------
+    fonts
+-----------*/
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-Italic.woff2") format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-Medium.woff2") format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-MediumItalic.woff2") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-Bold.woff2") format('woff2');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-BoldItalic.woff2") format('woff2');
+    font-weight: bolder;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-Light.woff2") format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("fonts/ubuntu/Ubuntu-LightItalic.woff2") format('woff2');
+    font-weight: lighter;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("fonts/ubuntu-mono/UbuntuMono-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("fonts/ubuntu-mono/UbuntuMono-Italic.woff2") format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("fonts/ubuntu-mono/UbuntuMono-Bold.woff2") format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("fonts/ubuntu-mono/UbuntuMono-BoldItalic.woff2") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*-----------
+    global
+-----------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    --black: #363149;
+    --pink: #FF00FF;
+    --yellow: #D6F910;
+    --white: #F0FAF8;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/*-----------
+    header
+-----------*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    background-color: var(--black);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+}
+
+header section {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header nav li {
+    font-size: 1.1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+
+header nav a:hover {
+    color: var(--pink);
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.15rem;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--pink);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/*-----------
+    main
+-----------*/
+
+main h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+main h2 {
+    font-family: "Ubuntu Mono", monospace;
+    width: fit-content;
+    margin: auto;
+}
