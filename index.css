@@ -215,18 +215,6 @@ h1 {
     letter-spacing: 0.05rem;
 }
 
-#about-me section p:nth-child(2) {
-    margin-left: 4ch;
-}
-
-#about-me section p:nth-child(3) {
-    margin-left: 8ch;
-}
-
-#about-me section p:nth-child(4) {
-    margin-left: 12ch;
-}
-
 #about-me p {
     font-size: 2rem;
 }
@@ -235,6 +223,18 @@ h1 {
     font-style: italic;
     background-color: var(--pink);
     padding: 0 0.5rem;
+}
+
+#about-me a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: var(--pink);
+    color: var(--black);
+}
+
+#about-me a:hover {
+    color: var(--pink);
 }
 
 #skills {
@@ -251,7 +251,7 @@ h1 {
 
 #skills p {
     width: fit-content;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 3rem auto;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -279,6 +279,40 @@ h1 {
     font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
+}
+
+#projects h2 {
+    width: fit-content;
+    margin: auto;
+    font-size: 3rem;
+}
+
+#resume {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 1rem;
+}
+
+#resume h2 {
+    width: fit-content;
+    margin: auto;
+    font-size: 3rem;
+}
+
+#contact-me h2 {
+    width: fit-content;
+    margin: auto;
+    font-size: 3rem;
+}
+
+/*-----------
+    footer
+-----------*/
+
+footer {
+    background-color: var(--black);
+    padding: 0.5rem 1rem;
+    color: var(--white);
 }
 
 /*-----------
