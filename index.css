@@ -116,6 +116,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Ubuntu", sans-serif;
     background-color: var(--white);
@@ -137,6 +141,11 @@ header {
     color: var(--white);
 }
 
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 header section {
     font-size: 2rem;
     font-weight: lighter;
@@ -155,8 +164,6 @@ header nav li {
 }
 
 header nav a {
-    text-decoration: none;
-    color: var(--white);
     position: relative;
 }
 
@@ -187,15 +194,146 @@ header nav a:hover::after {
     main
 -----------*/
 
-main h1 {
-    font-size: 4rem;
+h1 {
+    font-size: 10rem;
     font-weight: bolder;
     width: fit-content;
-    margin: 1rem auto;
+    margin: 5rem auto 2rem auto;
+    text-shadow: 0.25rem 0.25rem 0.25rem var(--pink);
 }
 
-main h2 {
+.typewriter {
     font-family: "Ubuntu Mono", monospace;
+    font-size: 3rem;
     width: fit-content;
-    margin: auto;
+    margin: 0 auto 5rem auto;
+}
+
+#about-me section {
+    margin: 0 0.5rem 5rem 0.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.05rem;
+}
+
+#about-me section p:nth-child(2) {
+    margin-left: 4ch;
+}
+
+#about-me section p:nth-child(3) {
+    margin-left: 8ch;
+}
+
+#about-me section p:nth-child(4) {
+    margin-left: 12ch;
+}
+
+#about-me p {
+    font-size: 2rem;
+}
+
+#about-me mark {
+    font-style: italic;
+    background-color: var(--pink);
+    padding: 0 0.5rem;
+}
+
+#skills {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 1rem;
+}
+
+#skills h2 {
+    width: fit-content;
+    margin: 0 auto 1rem auto;
+    font-size: 3rem;
+}
+
+#skills p {
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#skills section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#skills section p {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+}
+
+#skills section p i {
+    display: block;
+    font-size: 7.5rem;
+}
+
+#skills section p span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+}
+
+/*-----------
+    media
+-----------*/
+
+@media (min-width: 768px) {
+    .typewriter {
+        position: relative;
+    }
+
+    .typewriter::before, .typewriter::after {
+        content: "";
+        inset: 0;
+        position: absolute;
+        padding: 0;
+    }
+    
+    .typewriter::before {
+        background-color: var(--white);
+        animation: typing 5s steps(41) 1s forwards;
+    }
+    
+    .typewriter::after {
+        width: 1ch;
+        background-color: var(--black);
+        animation: typing 5s steps(41) 1s forwards, blinking-block 1.25s steps(1, end) 6s infinite;
+    }
+    
+    @keyframes typing {
+        to {
+            left: 100%;
+        }
+    }
+    
+    @keyframes blinking-block {
+        0%, 100% {
+            background-color: var(--white);
+            color: var(--black);
+          }
+          50% {
+            color: var(--white);
+            background-color: var(--black);
+          }
+    }
+
+    #about-me section p:nth-child(2) {
+        margin-left: 4ch;
+    }
+    
+    #about-me section p:nth-child(3) {
+        margin-left: 8ch;
+    }
+    
+    #about-me section p:nth-child(4) {
+        margin-left: 12ch;
+    }
 }
