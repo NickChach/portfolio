@@ -294,7 +294,7 @@ h1 {
     font-weight: bold;
 }
 
-#projects div {
+#projects .portfolio {
     margin: 0 1rem 5rem 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -304,7 +304,7 @@ h1 {
 #projects .card {
     width: 100%;
     margin: auto;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     border: solid 0.25rem;
     border-color: var(--pink);
     clip-path: polygon(0% 1rem, 
@@ -320,13 +320,76 @@ h1 {
     margin: auto;
     font-size: 2rem;
     font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+#projects .card img {
+    display: block;
+    height: 349px;
+    width: auto;
+    margin: 2rem auto;
 }
 
 #projects .card p {
     font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
-    margin: auto;
+    margin: 0 auto 1.5rem auto;
+}
+
+#projects .project-links {
+    display: flex;
+}
+
+#projects .project-links p {
+    margin: 0 auto 0.5rem auto;
+}
+
+
+#projects .project-links a {
+    text-decoration: none;
+    font-family: "Ubuntu Mono", monospace;
+    color: var(--black);
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    transition: 250ms;
+    position: relative;
+}
+
+#projects .project-links a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--pink);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(4rem) rotateX(40deg) translateZ(-1rem) scale(1, 0.25);
+    filter: blur(3rem);
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+#projects .project-links a:hover {
+    border-color: var(--pink);
+    color: var(--pink);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem var(--pink);
+}
+
+#projects .project-links a:hover::after {
+    opacity: 0.5;
+}
+
+#projects .project-links a:active {
+    border-color: var(--pink);
+    color: var(--black);
+    box-shadow: none;
+}
+
+#projects .project-links a:active::after {
+    opacity: 0;
 }
 
 #resume {
