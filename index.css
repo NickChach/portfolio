@@ -217,24 +217,55 @@ h1 {
 
 #about-me p {
     font-size: 2rem;
+    letter-spacing: 0.05rem;
 }
 
-#about-me mark {
-    font-style: italic;
-    background-color: var(--pink);
-    padding: 0 0.5rem;
-}
-
-#about-me a {
+#about-me span {
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 0.25rem;
     text-decoration-color: var(--pink);
+    font-style: italic;
+    
+}
+
+#about-me a {
+    text-decoration: none;
+    background-color: var(--pink);
+    padding: 0.25rem 0.5rem;
     color: var(--black);
+    transition: 250ms;
+    position: relative;
+}
+
+#about-me a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--pink);
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(4rem) rotateX(40deg) translateZ(-1rem) scale(1, 0.25);
+    filter: blur(3rem);
+    opacity: 0;
+    transition: opacity 250ms;
 }
 
 #about-me a:hover {
-    color: var(--pink);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem var(--black);
+}
+
+#about-me a:hover::after {
+    opacity: 0.5;
+}
+
+#about-me a:active {
+    box-shadow: none;
+}
+
+#about-me a:active::after {
+    opacity: 0;
 }
 
 #skills {
@@ -307,11 +338,11 @@ h1 {
     padding: 1rem 1.5rem;
     border: solid 0.25rem;
     border-color: var(--pink);
-    clip-path: polygon(0% 1rem, 
-    1rem 0, 
+    clip-path: polygon(0% 5rem, 
+    5rem 0, 
     100% 0, 
-    100% calc(100% - 1rem), 
-    calc(100% - 1rem) 100%, 
+    100% calc(100% - 5rem), 
+    calc(100% - 5rem) 100%, 
     0 100%);
 }
 
@@ -335,7 +366,8 @@ h1 {
     font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
-    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
 }
 
 #projects .project-links {
