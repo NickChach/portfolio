@@ -254,6 +254,8 @@ h1 {
 
 #about-me a:hover {
     box-shadow: 0 0.5rem 0.5rem -0.4rem var(--black);
+    color: var(--white);
+    transition: color 250ms;
 }
 
 #about-me a:hover::after {
@@ -262,6 +264,7 @@ h1 {
 
 #about-me a:active {
     box-shadow: none;
+    color: var(--black);
 }
 
 #about-me a:active::after {
@@ -289,7 +292,8 @@ h1 {
 
 #skills section {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(131px, 1fr));
+    gap: 2rem;
 }
 
 #skills section p {
