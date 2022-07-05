@@ -31,7 +31,7 @@
                         I am a <span>front-end web developer</span> based in Athens, Greece.
                     </p>
                     <p>
-                        A native ES6+ speaker, DOM manipulator and API fetcher.
+                        A native ES6+ speaker, DOM manipulator and API consumer.
                     </p>
                     <p>
                         Feel free to take a look at my portfolio for my latest { ...projects }.
@@ -116,11 +116,39 @@
             </article>
             <article id="resume">
                 <h2>Resume</h2>
+                <p>To download my curriculum vitae, click one of the links below:</p>
+                <section id="pdf-links">
+                    <p><a href="pdfs/nikolaos-chachlioutis-cv-english.pdf" target="_blank" download="nikolaos-chachlioutis-cv-english">English</a></p>
+                    <p><a href="pdfs/nikolaos-chachlioutis-cv-greek.pdf" target="_blank" download="nikolaos-chachlioutis-cv-greek">Greek</a></p>
+                </section>
             </article>
             <article id="contact-me">
                 <h2>Contact</h2>
+                <p>If you are seeking a web presence or are looking to hire, send me a message:</p>
+                <form action="" method="post">
+                    <section>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                    </section>
+                    <section>
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Please enter your e-mail" required>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="10" placeholder="Please enter your message" required></textarea>
+                    </section>
+                    <button type="submit">Send message</button>
+                </form>
             </article>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Copyright © 2022 - Created by Nick Chachlioutis</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nickchach" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/NickChach" target="_blank"><i class="fa-brands fa-github-square"></i>GitHub</a></li>
+                <li><a href="mailto:nickchachlioutis@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i>E-mail</a></li>
+            </ul>
+        </footer>
     </body>
 </html> 
