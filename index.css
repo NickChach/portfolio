@@ -1,105 +1,4 @@
 /*-----------
-    fonts
------------*/
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-Regular.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-Italic.woff2") format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-Medium.woff2") format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-MediumItalic.woff2") format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-Bold.woff2") format('woff2');
-    font-weight: bolder;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-BoldItalic.woff2") format('woff2');
-    font-weight: bolder;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-Light.woff2") format('woff2');
-    font-weight: lighter;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url("fonts/ubuntu/Ubuntu-LightItalic.woff2") format('woff2');
-    font-weight: lighter;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("fonts/ubuntu-mono/UbuntuMono-Regular.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("fonts/ubuntu-mono/UbuntuMono-Italic.woff2") format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("fonts/ubuntu-mono/UbuntuMono-Bold.woff2") format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("fonts/ubuntu-mono/UbuntuMono-BoldItalic.woff2") format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-/*-----------
     global
 -----------*/
 
@@ -108,7 +7,6 @@
     margin: 0;
     --black: #363149;
     --pink: #FF00FF;
-    --yellow: #D6F910;
     --white: #F0FAF8;
 }
 
@@ -329,9 +227,13 @@ h1 {
     letter-spacing: 0.1rem;
 }
 
+#projects {
+    padding-top: 5rem;
+}
+
 #projects h2 {
     width: fit-content;
-    margin: 5rem auto 1rem auto;
+    margin: 0 auto 1rem auto;
     font-size: 3rem;
 }
 
@@ -515,9 +417,13 @@ h1 {
     opacity: 0;
 }
 
+#contact-me {
+    padding-top: 5rem;
+}
+
 #contact-me h2 {
     width: fit-content;
-    margin: 5rem auto 1rem auto;
+    margin: 0 auto 1rem auto;
     font-size: 3rem;
 }
 
@@ -912,17 +818,16 @@ i {
 @media (max-width: 576px) {
     .menu {
         position: fixed;
-        inset: 3rem 0 0 75%;
+        inset: 2.75rem 0 89% 0;
         background-color: var(--black);
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        justify-content: space-around;
         opacity: 1;
         z-index: 1;
     }
 
     .menu p {
-        margin: 1rem 1rem 0 auto;
+        margin-top: 1rem;
         text-align: right;
     }
 
@@ -934,10 +839,11 @@ i {
     }
 }
 
-
-
-
-
+@media (max-width: 850px) {
+    input, textarea {
+        width: 94vw;
+    }
+}
 
 @media (min-width: 639px) {
     .typewriter {

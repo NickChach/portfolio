@@ -4,12 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NICK/CHACHLIOUTIS</title>
+        <meta name="description" content="Your friendly neighbourhood web developer.">
+        <meta name="keywords" content="front-end, web developer, front end, frontend, nick chachlioutis, nikolaos, νίκος χαχλιούτης, νικόλαος">
+        <meta name="author" content="Nick Chachlioutis">
+        <meta property="og:site_name" content="Nick Chachlioutis" />
+        <meta property="og:url" content="https://www.nickchachlioutis.gr/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/nickchachlioutis.png">
+        <meta property="og:locale" content="en">
+        <meta property="og:description" content="Your friendly neighbourhood web developer.">
+        <title>Nick Chachlioutis</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="index.css">
         <script defer src="navbar-control.js"></script>
         <script defer src="index.js"></script>
-        <script defer src="https://kit.fontawesome.com/f185196c5b.js" crossorigin="anonymous"></script>
-        
+        <script src="https://kit.fontawesome.com/f185196c5b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -40,7 +52,7 @@
                         Feel free to take a look at my portfolio for my latest <span id="object">{ ...projects }.</span>
                     </p>
                     <p>
-                        If you are a business seeking a web presence or are looking to hire, <a href="#contact-me">contact(me)</a>.
+                        If you are a business looking to hire or are seeking a web presence, <a href="#contact-me">contact(me)</a>.
                     </p>
                 </section>
             </article>
@@ -82,7 +94,7 @@
                 <div class="portfolio">
                     <section class="card">
                         <h3>Movie KO</h3>
-                        <img src="images/movieko.png" alt="Image of Movie KO website.">
+                        <img src="images/movieko.png" alt="Image of Movie KO website." loading="lazy">
                         <p>A movie ratings comparison Progressive Web App created with HTML5, CSS3 and JavaScript.</p>
                         <div class="project-links">
                             <p><a href="https://github.com/NickChach/movieko" target="_blank">View code</a></p>
@@ -91,7 +103,7 @@
                     </section>
                     <section class="card">
                         <h3>Bitter Butter</h3>
-                        <img src="images/bitterbutter.png" alt="Image of Bitter Butter website.">
+                        <img src="images/bitterbutter.png" alt="Image of Bitter Butter website." loading="lazy">
                         <p>A patisserie e-shop created with WordPress, WooCommerce and Elementor.</p>
                         <div class="project-links">
                             <p><a href="https://bitterbutter.gr" target="_blank">Visit website</a></p>
@@ -99,7 +111,7 @@
                     </section>
                     <section class="card">
                         <h3>Block Covid-19 Facebook Posts</h3>
-                        <img src="images/covid-19-add-on.png" alt="Photograph of the Firefox extension in action.">
+                        <img src="images/covid-19-add-on.png" alt="Photograph of the Firefox extension in action." loading="lazy">
                         <p>A Firefox browser extension to hide Covid-19-related Facebook posts in English and Greek languages.</p>
                         <div class="project-links">
                             <p><a href="https://github.com/NickChach/blockcovidfacebookposts" target="_blank">View code</a></p>
@@ -108,7 +120,7 @@
                     </section>
                     <section class="card">
                         <h3>X-changesaurus</h3>
-                        <img src="images/x-changesaurus.png" alt="Image of X-changesaurus website.">
+                        <img src="images/x-changesaurus.png" alt="Image of X-changesaurus website." loading="lazy">
                         <p>A currency conversion calculator Progressive Web App created with HTML5, CSS3 and JavaScript.</p>
                         <div class="project-links">
                             <p><a href="https://github.com/NickChach/x-changesaurus" target="_blank">View code</a></p>
@@ -118,7 +130,7 @@
                 </div>
             </article>
             <article id="resume">
-                <h2>Resume</h2>
+                <h2>Résumé</h2>
                 <p>To download my curriculum vitae, click one of the links below:</p>
                 <section id="pdf-links">
                     <p><a href="pdfs/nikolaos-chachlioutis-cv-english.pdf" target="_blank" download="nikolaos-chachlioutis-cv-english">English</a></p>
@@ -127,21 +139,21 @@
             </article>
             <article id="contact-me">
                 <h2>Contact</h2>
-                <p>If you are seeking a web presence or are looking to hire, send me a message:</p>
-                <form action="" method="post">
+                <p>If you are looking to hire or are seeking a web presence, send me a message:</p>
+                <form name="contact" method="POST" netlify>
                     <section>
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                        <input type="text" name="name" id="name" minlength="3" placeholder="Please enter your name" required>
                     </section>
                     <section>
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" name="e-mail" id="e-mail" placeholder="Please enter your e-mail" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Please enter your e-mail" required>
                     </section>
                     <section>
                         <label for="message">Message</label>
                         <textarea name="message" id="message" rows="10" placeholder="Please enter your message" required></textarea>
                     </section>
-                    <button type="submit">Send message</button>
+                    <button>Send message</button>
                 </form>
             </article>
         </main>

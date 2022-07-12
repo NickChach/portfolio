@@ -1,6 +1,5 @@
 const navbar = document.querySelector("nav");
 const body = document.querySelector("body");
-
 const menu = document.createElement("section");
 
 menu.innerHTML = `
@@ -12,22 +11,14 @@ menu.innerHTML = `
 
 menu.classList.add("menu");
 
-function displayMenu() {
-    if (window.innerWidth <= 576) {
-        body.appendChild(menu);
-    }    
-}
-
 function closeMenu() {
     try {
         body.removeChild(menu);
     }
     catch(error) {
-        return 0;
+        return 1;
     }
 }
-
-/////////////////////////////////////
 
 function toggleMenu() {
     if (window.innerWidth <= 576) {
@@ -39,9 +30,6 @@ function toggleMenu() {
         }
     }    
 }
-
-/////////////////////////////////
-
 
 function minimiseNavbar() {
     if (window.innerWidth <= 576) {
