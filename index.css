@@ -736,6 +736,12 @@ i {
     }
 }
 
+@media (max-width: 576px) {
+    .typewriter {
+        margin: 0 auto 2rem auto;
+    }
+}
+
 @media (max-width: 390px) {
     .typewriter {
         display: none;
