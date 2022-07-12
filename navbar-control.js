@@ -5,7 +5,7 @@ const menu = document.createElement("section");
 menu.innerHTML = `
     <p><a href="#skills">Skills</a></p>
     <p><a href="#projects">Projects</a></p>
-    <p><a href="#resume">Resume</a></p>
+    <p><a href="#resume">Résumé</a></p>
     <p><a href="#contact-me">Contact</a></p>
     `;
 
