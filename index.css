@@ -818,7 +818,7 @@ i {
 @media (max-width: 576px) {
     .menu {
         position: fixed;
-        inset: 2.75rem 0 90% 0;
+        inset: 2.75rem 0 88% 0;
         background-color: var(--black);
         display: flex;
         justify-content: space-around;
