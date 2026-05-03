@@ -1,8 +1,8 @@
 import styles from "./feature.module.css";
 
-export default function Feature({ title, subtitle, children, key }) {
+export default function Feature({ title, subtitle, children }) {
 	return (
-		<section key={key} className={styles.feature}>
+		<section className={styles.feature}>
 			{children}
 			<h2>{title}</h2>
 			<p>{subtitle}</p>

@@ -30,13 +30,6 @@
 	height: auto;
 }
 
-@media screen and (max-width: 414) {
-	.hero {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-}
-
 @media screen and (max-width: 960) {
 	.hero {
 		display: flex;
@@ -49,5 +42,12 @@
 		align-self: center;
 		width: 75vw;
 		height: auto;
+	}
+}
+
+@media screen and (max-width: 414) {
+	.hero {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
