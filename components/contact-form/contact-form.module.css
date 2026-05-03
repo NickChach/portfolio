@@ -1,0 +1,87 @@
+.contactForm {
+	border: 2px solid var(--dark-red);
+	height: 100%;
+	width: 100%;
+	padding: 1rem 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contactForm hgroup {
+	margin-bottom: 1rem;
+}
+
+.contactForm h2 {
+	font-size: clamp(1.5rem, calc(0.275rem + 2vw), 2.75rem);
+	margin-bottom: 0.5rem;
+}
+
+.contactForm p {
+	font-size: clamp(1.25rem, calc(0.75rem + 1.65vw), 2rem);
+	font-weight: 300;
+}
+
+.contactForm label {
+	display: block;
+	font-size: clamp(1.25rem, calc(0.725rem + 1.26vw), 1.5rem);
+	line-height: 3rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+	display: block;
+	color: var(--black);
+	font-size: clamp(1.25rem, calc(0.275rem + 1.26vw), 1.5rem);
+	font-weight: 400;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.contactForm button {
+	width: fit-content;
+	background: none;
+	color: var(--black);
+	border: 2px solid var(--dark-green);
+	padding: 0.5rem 1rem;
+	margin-top: 0.5rem;
+	font-size: 1.25rem;
+	letter-spacing: 0.1rem;
+	transition: 250ms;
+	position: relative;
+	animation: glow 2s ease-in-out infinite;
+}
+
+.contactForm button:hover,
+.contactForm button:focus-visible {
+	box-shadow: 0 0.5rem 0.5rem -0.5rem var(--dark-green);
+	transform: translateY(-0.25rem);
+	cursor: pointer;
+	animation: none;
+}
+
+.contactForm button:active {
+	color: var(--black);
+	box-shadow: none;
+	transform: translateY(0.25em);
+	cursor: pointer;
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 0 var(--dark-green);
+	}
+	50% {
+		box-shadow: 0.5rem 0.5rem 0.5rem var(--dark-green);
+	}
+	1000% {
+		box-shadow: 0 0 0 var(--dark-green);
+	}
+}
+
+@media screen and (max-width: 1009) {
+	.contactForm {
+		padding: 1rem 1.5rem;
+	}
+}

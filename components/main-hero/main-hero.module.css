@@ -1,0 +1,53 @@
+.hero {
+	padding: 2.5rem 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-auto-rows: 1fr;
+	column-gap: 2.5rem;
+	align-items: start;
+}
+
+.hgroup {
+	justify-self: start;
+	align-self: start;
+}
+
+.hgroup h1 {
+	font-size: clamp(2rem, calc(0.275rem + 5.25vw), 7.2rem);
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.hgroup p {
+	font-size: clamp(1.25rem, calc(0.725rem + 1.65vw), 2rem);
+	font-weight: 300;
+}
+
+.hero img {
+	justify-self: end;
+	align-self: center;
+	width: 40vw;
+	height: auto;
+}
+
+@media screen and (max-width: 414) {
+	.hero {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media screen and (max-width: 960) {
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	.hero img {
+		justify-self: end;
+		align-self: center;
+		width: 75vw;
+		height: auto;
+	}
+}

@@ -1,0 +1,27 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.icon {
+	height: clamp(1.75rem, calc(0.725rem + 2.05vw), 2.5rem);
+	width: auto;
+}
+
+.growth {
+	font-style: normal;
+	color: var(--dark-green);
+	text-shadow: 0.5rem 0.5rem 0.5rem var(--green);
+	display: inline-block;
+	animation: grow-shrink 2s ease-in-out infinite;
+}
+
+@keyframes grow-shrink {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+}

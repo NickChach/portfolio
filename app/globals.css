@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+	--black: #131316;
+	--white: #fcf6ed;
+	--green: #c8fc69;
+	--dark-green: #7fb52b;
+	--red: #ff9d76;
+	--dark-red: #8c514c;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}

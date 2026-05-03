@@ -1,0 +1,30 @@
+.hero {
+	height: 100vh;
+	background-image: url("/images/hero.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0%;
+	margin: auto;
+	animation: scaleBackground 0.5s ease-in-out 0.25s forwards;
+	background-color: var(--black);
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 2.5rem 1rem 2.5rem;
+}
+
+@keyframes scaleBackground {
+	from {
+		background-size: 0%;
+	}
+	to {
+		background-size: clamp(250px, calc(0.275rem + 45%), 35%);
+	}
+}
+
+@media screen and (max-width: 414) {
+	.hero {
+		padding: 0 1.5rem 1rem 1.5rem;
+	}
+}

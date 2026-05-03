@@ -1,0 +1,13 @@
+.tag {
+	width: fit-content;
+	background: var(--dark-red);
+	color: var(--white);
+	padding: 0.25rem;
+	padding: 0.25rem 0.5rem;
+	font-size: 1rem;
+	font-size: clamp(0.725rem, calc(0.725rem + 0.825vw), 1rem);
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%);
+}

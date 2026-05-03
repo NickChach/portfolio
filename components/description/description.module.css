@@ -1,0 +1,19 @@
+.description {
+	padding: 2.5rem;
+	letter-spacing: 0.05rem;
+}
+
+.description section:first-child {
+	margin-top: 0;
+}
+
+.description section:last-child {
+	border-bottom: none;
+}
+
+@media screen and (max-width: 414) {
+	.description {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}

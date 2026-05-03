@@ -1,0 +1,60 @@
+.bulletPoint {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto auto;
+	padding-top: 0;
+	padding-left: clamp(0, calc(0.275rem + 4vw), 5rem);
+	padding-right: clamp(0, calc(0.275rem + 4vw), 5rem);
+	gap: 1rem;
+	border-bottom: 1px solid var(--black);
+	margin-top: 2rem;
+}
+
+.icon {
+	height: 5rem;
+	width: auto;
+	grid-column: 1;
+	grid-row: 2;
+	justify-self: end;
+	align-self: center;
+	color: var(--dark-green);
+}
+
+.bulletPoint h2 {
+	font-size: clamp(1.24rem, calc(0.275rem + 1.6vw), 2rem);
+	font-weight: 700;
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: end;
+}
+
+.bulletPoint p {
+	font-size: clamp(1.25rem, calc(0.275rem + 1.5vw), 1.75rem);
+	font-weight: 400;
+	grid-column: 2;
+	grid-row: 2;
+	padding-bottom: 2.5rem;
+	letter-spacing: 0;
+}
+
+@media screen and (max-width: 1243) {
+	.bulletPoint h2 {
+		letter-spacing: 0;
+	}
+}
+
+@media screen and (max-width: 960) {
+	.bulletPoint {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	.bulletPoint {
+		display: flex;
+		flex-direction: column;
+	}
+}

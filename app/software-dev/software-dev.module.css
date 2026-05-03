@@ -1,0 +1,44 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.icon {
+	height: clamp(1.75rem, calc(0.725rem + 2.05vw), 2.5rem);
+	width: auto;
+}
+
+.highlighted {
+	display: inline-block;
+	position: relative;
+	padding-right: clamp(0.5rem, calc(0.275rem + 0.825vw), 1rem);
+	background-image: linear-gradient(to right, var(--dark-green), var(--dark-green));
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-position: 0 0;
+	animation: highlight 1s ease-out 0.25s forwards;
+}
+
+#a {
+	font-size: 1.5rem;
+}
+
+@keyframes highlight {
+	to {
+		background-size: 100% 100%;
+		color: var(--white);
+	}
+}
+
+/* 
+@media screen and (max-width: 490) {
+  #project {
+    clip-path: polygon(0% 2.5rem, 
+    2.5rem 0, 
+    100% 0, 
+    100% calc(100% - 2.5rem), 
+    calc(100% - 2.5rem) 100%, 
+    0 100%);
+  }
+}
+ */

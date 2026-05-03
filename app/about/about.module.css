@@ -1,0 +1,50 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.typewriter {
+	font-style: normal;
+	color: var(--dark-green);
+	display: inline-block;
+	position: relative;
+}
+
+.typewriter::before,
+.typewriter::after {
+	content: "";
+	inset: 0;
+	position: absolute;
+	padding: 0;
+}
+
+.typewriter::before {
+	background-color: var(--white);
+	animation: typing 0.9s steps(7) 0.25s forwards;
+}
+
+.typewriter::after {
+	width: clamp(0.25rem, calc(0.275rem + 0.5vw), 1rem);
+	background-color: var(--dark-green);
+	animation:
+		typing 0.9s steps(7) 0.25s forwards,
+		blinking-block 1.5s steps(1, end) 2s infinite;
+}
+
+@keyframes typing {
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes blinking-block {
+	0%,
+	100% {
+		background-color: var(--white);
+		color: var(--dark-green);
+	}
+	50% {
+		color: var(--white);
+		background-color: var(--dark-green);
+	}
+}

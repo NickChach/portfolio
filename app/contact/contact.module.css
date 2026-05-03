@@ -1,0 +1,10 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.icon {
+	height: clamp(2rem, calc(0.275rem + 2vw), 2.5rem);
+	width: auto;
+	color: var(--dark-green);
+}
