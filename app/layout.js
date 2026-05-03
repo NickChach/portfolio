@@ -46,7 +46,8 @@ export const metadata = {
 	],
 	openGraph: {
 		title: "NovaConstant — NickChachlioutis",
-		description: "Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα.",
+		description:
+			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 		url: "https://www.nickchachlioutis.gr/",
 		siteName: "NovaConstant — NickChachlioutis",
 		images: [
