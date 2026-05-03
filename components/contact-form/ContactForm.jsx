@@ -53,8 +53,8 @@ export default function ContactForm() {
 				<button type="submit" disabled={status === "loading"}>
 					{status === "loading" ? "Αποστολή..." : "Αποστολή"}
 				</button>
-				{status === "success" && <p>Το μήνυμά σας εστάλη επιτυχώς!</p>}
-				{status === "error" && <p>Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.</p>}
+				{status === "success" && <p className={styles.formReply}>Το μήνυμά σας εστάλη επιτυχώς!</p>}
+				{status === "error" && <p className={styles.formReply}>Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.</p>}
 			</form>
 		</section>
 	);

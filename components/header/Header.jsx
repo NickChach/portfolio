@@ -13,7 +13,7 @@ export default function Header() {
 		<header className={styles.header}>
 			<section>
 				<Image src={logo} alt="Nova Constant's logo" width="237" height="240" priority />
-				<p className={`${chakraPetch.className} ${styles.title}`}>
+				<p className={chakraPetch.className}>
 					<span className={styles.green}>NOVA</span> <span className={styles.red}>CONSTANT</span>
 				</p>
 			</section>
