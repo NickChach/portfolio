@@ -14,7 +14,7 @@ export async function POST(request) {
 		}
 
 		await resend.emails.send({
-			from: "Contact Form <onboarding@resend.dev>", // Change after verifying your domain
+			from: "Contact Form <contact@nickchachlioutis.gr>",
 			to: "contact@nickchachlioutis.gr",
 			subject: `New message from ${name}`,
 			replyTo: email,
