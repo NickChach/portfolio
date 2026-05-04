@@ -4,6 +4,29 @@ import styles from "./contact.module.css";
 import ContactHero from "@/components/contact-hero/ContactHero";
 import { FaRegEnvelope, FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa6";
 
+export const metadata = {
+	title: "NovaConstant — NickChachlioutis | Contact",
+	openGraph: {
+		title: "NovaConstant — NickChachlioutis | Contact",
+		description:
+			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
+		url: "https://www.nickchachlioutis.gr/contact",
+		siteName: "NovaConstant — NickChachlioutis",
+		images: [
+			{
+				url: "/images/nickchachlioutis.png",
+				width: 1200,
+				height: 630,
+			},
+		],
+		locale: "el_GR",
+		type: "website",
+	},
+	alternates: {
+		canonical: "https://nickchachlioutis.gr/contact",
+	},
+};
+
 export default function ContactPage() {
 	const contacts = [
 		{

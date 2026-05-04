@@ -6,6 +6,29 @@ import Features from "@/components/features/Features";
 import imageWebDev from "../../public/images/business_growth.webp";
 import { LuRocket, LuMonitorSmartphone, LuTrendingUp, LuPalette, LuMail, LuHandshake } from "react-icons/lu";
 
+export const metadata = {
+	title: "NovaConstant — NickChachlioutis | Web Development",
+	openGraph: {
+		title: "NovaConstant — NickChachlioutis | Web Development",
+		description:
+			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
+		url: "https://www.nickchachlioutis.gr/web-dev",
+		siteName: "NovaConstant — NickChachlioutis",
+		images: [
+			{
+				url: "/images/nickchachlioutis.png",
+				width: 1200,
+				height: 630,
+			},
+		],
+		locale: "el_GR",
+		type: "website",
+	},
+	alternates: {
+		canonical: "https://nickchachlioutis.gr/web-dev",
+	},
+};
+
 export default function WebDevPage() {
 	const image = {
 		src: imageWebDev,

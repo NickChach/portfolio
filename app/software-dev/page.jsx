@@ -9,6 +9,29 @@ import Projects from "@/components/projects/Projects";
 import imageNPMVulnScanner from "../../public/images/npm_vulnerability_scanner.webp";
 import imageSemanticPdfSearch from "../../public/images/semantic_pdf_search.webp";
 
+export const metadata = {
+	title: "NovaConstant — NickChachlioutis | Software Development",
+	openGraph: {
+		title: "NovaConstant — NickChachlioutis | Software Development",
+		description:
+			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
+		url: "https://www.nickchachlioutis.gr/software-dev",
+		siteName: "NovaConstant — NickChachlioutis",
+		images: [
+			{
+				url: "/images/nickchachlioutis.png",
+				width: 1200,
+				height: 630,
+			},
+		],
+		locale: "el_GR",
+		type: "website",
+	},
+	alternates: {
+		canonical: "https://nickchachlioutis.gr/software-dev",
+	},
+};
+
 export default function SoftwareDevPage() {
 	const image = {
 		src: imageSoftDev,

@@ -8,7 +8,6 @@ const IbmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata = {
-	title: "NovaConstant — NickChachlioutis",
 	description:
 		"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 	authors: [{ name: "NovaConstant — NickChachlioutis" }],
@@ -44,22 +43,6 @@ export const metadata = {
 		"remote",
 		"next.js",
 	],
-	openGraph: {
-		title: "NovaConstant — NickChachlioutis",
-		description:
-			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
-		url: "https://www.nickchachlioutis.gr/",
-		siteName: "NovaConstant — NickChachlioutis",
-		images: [
-			{
-				url: "/images/nickchachlioutis.png",
-				width: 1200,
-				height: 630,
-			},
-		],
-		locale: "el_GR",
-		type: "website",
-	},
 	robots: {
 		index: true,
 		follow: true,
@@ -71,9 +54,6 @@ export const metadata = {
 			"max-image-preview": "large",
 			"max-video-preview": -1,
 		},
-	},
-	alternates: {
-		canonical: "https://nickchachlioutis.gr",
 	},
 };
 
