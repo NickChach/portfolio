@@ -5,9 +5,9 @@ import ContactHero from "@/components/contact-hero/ContactHero";
 import { FaRegEnvelope, FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa6";
 
 export const metadata = {
-	title: "NovaConstant — NickChachlioutis | Contact",
+	title: "NovaConstant — NickChachlioutis | Επικοινωνία",
 	openGraph: {
-		title: "NovaConstant — NickChachlioutis | Contact",
+		title: "NovaConstant — NickChachlioutis | Επικοινωνία",
 		description:
 			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 		url: "https://www.nickchachlioutis.gr/contact",

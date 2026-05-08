@@ -10,9 +10,9 @@ import imageNPMVulnScanner from "../../public/images/npm_vulnerability_scanner.w
 import imageSemanticPdfSearch from "../../public/images/semantic_pdf_search.webp";
 
 export const metadata = {
-	title: "NovaConstant — NickChachlioutis | Software Development",
+	title: "NovaConstant — NickChachlioutis | Ανάπτυξη Λογισμικού",
 	openGraph: {
-		title: "NovaConstant — NickChachlioutis | Software Development",
+		title: "NovaConstant — NickChachlioutis | Ανάπτυξη Λογισμικού",
 		description:
 			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 		url: "https://www.nickchachlioutis.gr/software-dev",

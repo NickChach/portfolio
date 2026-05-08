@@ -49,9 +49,6 @@ export default function AboutPage() {
 					}
 					subtitle="Ονομάζομαι Νίκος Χαχλιούτης κι είμαι full-stack web developer. Το πάθος μου είναι η δημιουργία σύγχρονων κι αξιόπιστων ψηφιακών προϊόντων κι υπηρεσιών."
 					image={image}
-					titleStyles={styles.h1}
-					subtitleStyles={styles.p}
-					heroStyles={styles.hero}
 				/>
 				<Description />
 			</main>

@@ -1,0 +1,47 @@
+.container {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.article {
+	padding: 0 2.5rem 2.5rem 2.5rem;
+}
+
+.article hgroup h1 {
+	font-size: clamp(2rem, calc(0.275rem + 5.25vw), 7.2rem);
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.article hgroup p {
+	font-size: clamp(1.25rem, calc(0.725rem + 1.65vw), 2rem);
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.article section {
+	margin-bottom: 2rem;
+	letter-spacing: 0.05rem;
+}
+
+.article section h2 {
+	font-size: clamp(1.24rem, calc(0.275rem + 1.6vw), 2rem);
+	font-weight: 700;
+}
+
+.article p,
+.article li {
+	font-size: clamp(1.25rem, calc(0.275rem + 1.5vw), 1.75rem);
+	font-weight: 400;
+}
+
+.article section ul {
+	margin: 0.75rem 2.5rem;
+}
+
+@media screen and (max-width: 414) {
+	.article {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

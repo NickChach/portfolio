@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./contact-form.module.css";
+import Link from "next/link";
 
 export default function ContactForm() {
 	const [status, setStatus] = useState("idle");
@@ -53,6 +54,15 @@ export default function ContactForm() {
 				<button type="submit" disabled={status === "loading"}>
 					{status === "loading" ? "Αποστολή..." : "Αποστολή"}
 				</button>
+				<p id={styles.legalNotice}>
+					<strong>Σημείωση Απορρήτου:</strong> Χρησιμοποιώ το όνομα και το e-mail σας αποκλειστικά για να απαντήσω στο μήνυμά σας.
+					Τα δεδομένα σας δεν κοινοποιούνται σε τρίτους για διαφημιστικούς σκοπούς. Πατώντας «Αποστολή», δηλώνετε ότι λάβατε γνώση
+					της{" "}
+					<Link href="/privacy-policy" target="_blank">
+						Πολιτικής Απορρήτου
+					</Link>
+					.
+				</p>
 				{status === "success" && <p className={styles.formReply}>Το μήνυμά σας εστάλη επιτυχώς!</p>}
 				{status === "error" && <p className={styles.formReply}>Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά.</p>}
 			</form>

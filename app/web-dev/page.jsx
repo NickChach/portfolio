@@ -7,9 +7,9 @@ import imageWebDev from "../../public/images/business_growth.webp";
 import { LuRocket, LuMonitorSmartphone, LuTrendingUp, LuPalette, LuMail, LuHandshake } from "react-icons/lu";
 
 export const metadata = {
-	title: "NovaConstant — NickChachlioutis | Web Development",
+	title: "NovaConstant — NickChachlioutis | Ανάπτυξη Ιστοσελίδων",
 	openGraph: {
-		title: "NovaConstant — NickChachlioutis | Web Development",
+		title: "NovaConstant — NickChachlioutis | Ανάπτυξη Ιστοσελίδων",
 		description:
 			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
 		url: "https://www.nickchachlioutis.gr/web-dev",
