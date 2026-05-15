@@ -8,7 +8,7 @@ export const metadata = {
 		title: "NovaConstant — NickChachlioutis",
 		description:
 			"Ανάπτυξη ιστοσελίδων για τον 21ο αιώνα. Υψηλού επιπέδου διαδικτυακές υπηρεσίες προσαρμοσμένες στις ανάγκες και το brand σας.",
-		url: "https://www.nickchachlioutis.gr/",
+		url: "https://www.nickchachlioutis.gr",
 		siteName: "NovaConstant — NickChachlioutis",
 		images: [
 			{
@@ -21,7 +21,7 @@ export const metadata = {
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://nickchachlioutis.gr",
+		canonical: "https://www.nickchachlioutis.gr",
 	},
 };
 

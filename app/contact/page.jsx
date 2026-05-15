@@ -23,7 +23,7 @@ export const metadata = {
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://nickchachlioutis.gr/contact",
+		canonical: "https://www.nickchachlioutis.gr/contact",
 	},
 };
 

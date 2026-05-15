@@ -1,5 +1,5 @@
 export default function sitemap() {
-	const baseUrl = "https://nickchachlioutis.gr";
+	const baseUrl = "https://www.nickchachlioutis.gr";
 
 	return [
 		{

@@ -21,7 +21,7 @@ export const metadata = {
 		type: "website",
 	},
 	alternates: {
-		canonical: "https://nickchachlioutis.gr/privacy-policy",
+		canonical: "https://www.nickchachlioutis.gr/privacy-policy",
 	},
 };
 
